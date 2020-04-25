@@ -16,13 +16,12 @@ export default class PostLogin extends Component {
   }
 
   enviarFetch = async () => {
-    //DDDhttps://estacion.herokuapp.com/api/data
-    console.log('enviando fetch')
+       console.log('enviando fetch')
 /*     const res = await fetch('http://localhost:3000/api/data')     
  */   try {
 
 
-      const res = await this.fetchWithTimeOut('https://estacion.herokuapp.com/api/data', {
+      const res = await this.fetchWithTimeOut('https://proyectofundamentos.herokuapp.com/api/data', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
